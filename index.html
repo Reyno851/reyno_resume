@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Resume — Your Name">
-  <title>Your Name | Resume</title>
+  <meta name="description" content="Reynold Chia — Senior Cloud Engineer based in Singapore. AWS, automation, and platform engineering.">
+  <title>Reynold Chia | Resume</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 
   <header class="site-header">
     <nav class="nav" aria-label="Primary">
-      <a class="nav__brand" href="#">Your Name</a>
+      <a class="nav__brand" href="#">Reynold Chia</a>
       <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
         <span class="nav__toggle-label">Menu</span>
         <span class="nav__toggle-icon" aria-hidden="true"></span>
@@ -24,6 +24,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -33,29 +34,35 @@
 
   <main id="main">
     <section class="hero" id="top">
-      <p class="hero__eyebrow">Software Engineer</p>
-      <h1 class="hero__title">Your Name</h1>
+      <p class="hero__eyebrow">Senior Cloud Engineer</p>
+      <h1 class="hero__title">Reynold Chia</h1>
       <p class="hero__summary">
-        Short professional summary goes here. Describe what you do, what you care about,
-        and the kind of roles you are looking for.
+        Cloud engineer with 7+ years of experience building secure, scalable platforms on AWS.
+        Passionate about automation, observability, and using emerging technologies to improve
+        how teams ship and operate in the cloud.
       </p>
       <div class="hero__actions">
         <a class="btn btn--primary" href="#contact">Get in touch</a>
-        <a class="btn btn--secondary" href="#" download>Download resume (PDF)</a>
+        <a class="btn btn--secondary" href="https://www.linkedin.com/in/reynold-chia-519356167/" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
       </div>
       <ul class="hero__contact">
-        <li><a href="mailto:you@example.com">you@example.com</a></li>
-        <li><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-        <li><span>City, Country</span></li>
+        <li><a href="mailto:reynoldchia@gmail.com">reynoldchia@gmail.com</a></li>
+        <li><a href="https://github.com/Reyno851" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/reynold-chia-519356167/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><span>Singapore</span></li>
       </ul>
     </section>
 
     <section class="section" id="about">
       <h2 class="section__title">About</h2>
       <p>
-        A few sentences about your background, interests, and what you bring to a team.
-        Replace this placeholder with your own story.
+        I am passionate about automation and cloud technologies, with a strong focus on AWS
+        solutions that improve availability, reliability, security, and performance. I have
+        designed and implemented robust cloud architectures and stay current with industry trends
+        so teams can adopt new tools and practices effectively. Highlights include automating
+        CloudFormation deployment testing with Jenkins and Python, centralizing security logs for
+        multi-account environments, and building internal platforms that simplify cloud operations
+        for application teams.
       </p>
     </section>
 
@@ -64,25 +71,68 @@
       <ol class="timeline">
         <li class="timeline__item">
           <div class="timeline__header">
-            <h3 class="timeline__role">Job Title</h3>
-            <span class="timeline__date">Jan 2024 — Present</span>
+            <h3 class="timeline__role">Senior Cloud Engineer</h3>
+            <span class="timeline__date">May 2025 — Present</span>
           </div>
-          <p class="timeline__org">Company Name · Location</p>
+          <p class="timeline__org">Aioi Nissay Dowa Services Asia Pte. Ltd. · Singapore</p>
           <ul>
-            <li>Accomplishment or responsibility placeholder.</li>
-            <li>Another bullet highlighting impact, metrics, or technologies.</li>
-            <li>Third bullet describing collaboration or leadership.</li>
+            <li>Led APAC-wide cloud projects across the Philippines, Indonesia, and India, collaborating with local teams and external vendors to optimize workflows and infrastructure.</li>
+            <li>Enabled GDCM and LDCM IMP device types with end-to-end infrastructure using AWS Lambda, S3, IAM roles, CloudFront, and a React UI; automated pipelines for model updates, driver lists, and scoring reports with Lambda, Step Functions, AWS Batch, Boto3, and CloudWatch.</li>
+            <li>Modernized IndoB2C and MDI codebases by moving logic out of RDS for GitLab version control, reviewing and refactoring vendor code, resolving caching and CSV upload issues, and migrating legacy systems from CodeCommit to GitLab while upgrading Python from 3.9 to 3.12.</li>
+            <li>Collaborated with Data Science and Business Development teams to optimize scoring logic, vehicle registration, and reporting pipelines, including automating tasks, querying RDS via SageMaker notebooks, ad-hoc data fixes, and robust logging and monitoring.</li>
+            <li>Provided operational support including EC2 debugging for clock resyncs, retriggering downloads, and optimizing legacy trip scoring code, significantly reducing RDS aborted clients and improving system stability.</li>
+            <li>Coordinated with internal and external stakeholders, including Japanese and Vietnamese vendors, for requirements gathering, code reviews, and project discussions; supported initiatives such as the GDCM rollout for IndoB2C and upcoming projects in Vietnam.</li>
           </ul>
         </li>
         <li class="timeline__item">
           <div class="timeline__header">
-            <h3 class="timeline__role">Previous Job Title</h3>
-            <span class="timeline__date">Jun 2022 — Dec 2023</span>
+            <h3 class="timeline__role">Cloud Engineer</h3>
+            <span class="timeline__date">Aug 2020 — May 2025</span>
           </div>
-          <p class="timeline__org">Previous Company · Location</p>
+          <p class="timeline__org">DBS Bank · Singapore</p>
           <ul>
-            <li>Placeholder for a key project or achievement.</li>
-            <li>Placeholder for tools, stack, or outcomes.</li>
+            <li>Developed DBS Bank’s AWS public cloud platform-as-a-service, Evolve, including X-Ray tracing in Lambda and AMI encryption in EC2.</li>
+            <li>Automated AWS CloudFormation deployment testing via a Jenkins and Python pipeline built with a 3-person team.</li>
+            <li>Consolidated logs from AWS GuardDuty, IAM Access Analyzer, VPC Flow Logs, and Route 53 resolvers into a central S3 bucket for easier querying.</li>
+            <li>Built an AWS OpenSearch dashboard for S3 logs across 20+ accounts, improving visibility into non-compliant API calls.</li>
+            <li>Strengthened EKS security by enforcing latest TLS standards through Kubernetes OPA Gatekeeper.</li>
+            <li>Built a Java Spring Boot and Angular web portal used by 30+ application teams to manage cloud deployments.</li>
+            <li>Reduced Lambda invocation costs by 50% by fixing critical bugs in a compliance exemption approval workflow.</li>
+            <li>Connected AWS CloudWatch alerts to Microsoft Teams via SNS to improve observability and incident response.</li>
+          </ul>
+        </li>
+        <li class="timeline__item">
+          <div class="timeline__header">
+            <h3 class="timeline__role">Software Development Associate</h3>
+            <span class="timeline__date">Jan 2020 — Jul 2020</span>
+          </div>
+          <p class="timeline__org">JTC Corporation · Singapore</p>
+          <ul>
+            <li>Led ReactJS development of JTC’s revamped geospatial web application for improved customisability and scalability.</li>
+            <li>Integrated ArcGIS Enterprise data with JavaScript, HTML, and CSS to deliver a user-friendly interface for industrial users.</li>
+            <li>Collaborated with a 4-person team using Microsoft Visual Studio TFS and Git to meet project deadlines.</li>
+          </ul>
+        </li>
+        <li class="timeline__item">
+          <div class="timeline__header">
+            <h3 class="timeline__role">Software Development (Freelance)</h3>
+            <span class="timeline__date">Aug 2019 — Dec 2019</span>
+          </div>
+          <p class="timeline__org">GioSenz · Singapore</p>
+          <ul>
+            <li>Led front-end Angular CLI development of a UI for reading geospatial optical imagery via Google Maps API.</li>
+            <li>Styled the application with HTML5, CSS, and TypeScript to improve usability for urban-planning clients.</li>
+          </ul>
+        </li>
+        <li class="timeline__item">
+          <div class="timeline__header">
+            <h3 class="timeline__role">Student Consultant</h3>
+            <span class="timeline__date">Sep 2019</span>
+          </div>
+          <p class="timeline__org">Amazon Web Services (AWS) · Singapore</p>
+          <ul>
+            <li>NTU PEAK programme: Best Ideation Award, 1st runner-up — designed a university graduate hiring programme for AWS.</li>
+            <li>Pitched solutions to C-suite leaders from AWS, Rolls-Royce, EY, Lendlease, and SSMC.</li>
           </ul>
         </li>
       </ol>
@@ -91,37 +141,84 @@
     <section class="section" id="education">
       <h2 class="section__title">Education</h2>
       <article class="card">
-        <h3 class="card__title">Degree Name</h3>
-        <p class="card__meta">University Name · Graduation Year</p>
-        <p>Relevant coursework, honors, or activities can go here.</p>
+        <h3 class="card__title">Bachelor of Science, Environmental Earth Systems Science</h3>
+        <p class="card__meta">Nanyang Technological University · 2016 — 2020 · Singapore</p>
+        <p>NTU College Scholarship recipient. Selected activities: NTU PEAK Best Ideation Award (1st runner-up), Microsoft AI Gaming Challenge (3rd place), HackNTU CTF participant.</p>
       </article>
+      <article class="card">
+        <h3 class="card__title">Global Education and Mobility (GEM) Explorer</h3>
+        <p class="card__meta">University of Leeds · 2018 · United Kingdom</p>
+      </article>
+    </section>
+
+    <!--
+      CERTIFICATIONS — edit the block below (id="certifications"):
+      For each <li>, set:
+        1. href="..."  → your Credly badge URL (e.g. https://www.credly.com/badges/xxxx)
+        2. Link text   → exact certification name
+      Duplicate or remove <li> rows as needed. Add more AWS certs; keep or remove Google.
+    -->
+    <section class="section" id="certifications">
+      <h2 class="section__title">Certifications</h2>
+      <ul class="cert-list">
+        <li>
+          <a href="https://www.credly.com/badges/4c6f8997-3ab0-4518-a84a-bd393e1d8946/linked_in_profile" target="_blank" rel="noopener noreferrer">AWS Certified CloudOps Engineer – Associate</a>
+        </li>
+        <li>
+          <a href="https://www.credly.com/badges/1293daa4-abc8-45e8-a0e5-1114f447858e/linked_in_profile" target="_blank" rel="noopener noreferrer">AWS Certified Solutions Architect – Professional</a>
+        </li>
+        <li>
+          <a href="https://www.credly.com/badges/ff4b17d3-96b8-445c-961a-b11e5aa78632/linked_in_profile" target="_blank" rel="noopener noreferrer">Google Cloud Certified — Associate Cloud Engineer</a>
+        </li>
+        <li>
+          <a href="https://www.credly.com/badges/1fc775e4-09bb-42ff-8618-016609509e21/linked_in_profile" target="_blank" rel="noopener noreferrer">CKA: Certified Kubernetes Administrator</a>
+        </li>
+        <li>
+          <a href="https://rey-s3.s3.amazonaws.com/jlpt_n3_cert.pdf" target="_blank" rel="noopener noreferrer">JLPT N3</a>
+        </li>
+      </ul>
     </section>
 
     <section class="section" id="skills">
       <h2 class="section__title">Skills</h2>
       <div class="skills">
         <div class="skills__group">
-          <h3>Languages</h3>
+          <h3>Cloud &amp; DevOps</h3>
           <ul class="tag-list">
-            <li>JavaScript</li>
+            <li>AWS</li>
+            <li>CloudFormation</li>
+            <li>EKS</li>
+            <li>Lambda</li>
+            <li>S3</li>
+            <li>OpenSearch</li>
+            <li>Jenkins</li>
+            <li>Kubernetes</li>
+            <li>OPA Gatekeeper</li>
+            <li>Google Cloud</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3>Languages &amp; Frameworks</h3>
+          <ul class="tag-list">
             <li>Python</li>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>JavaScript</li>
             <li>TypeScript</li>
-          </ul>
-        </div>
-        <div class="skills__group">
-          <h3>Frameworks &amp; Tools</h3>
-          <ul class="tag-list">
             <li>React</li>
-            <li>Node.js</li>
-            <li>Git</li>
+            <li>Angular</li>
+            <li>MATLAB</li>
           </ul>
         </div>
         <div class="skills__group">
-          <h3>Other</h3>
+          <h3>Tools &amp; Other</h3>
           <ul class="tag-list">
-            <li>Agile</li>
-            <li>Technical writing</li>
-            <li>Public speaking</li>
+            <li>Git</li>
+            <li>Tableau</li>
+            <li>ArcGIS</li>
+            <li>Microsoft Teams</li>
+            <li>Automation</li>
+            <li>Observability</li>
           </ul>
         </div>
       </div>
@@ -132,24 +229,46 @@
       <div class="projects">
         <article class="card project-card">
           <h3 class="card__title">
-            <a href="#" target="_blank" rel="noopener noreferrer">Project Name</a>
+            <a href="https://github.com/Reyno851/food_classifier_tf2_cloud_run" target="_blank" rel="noopener noreferrer">Food Classifier on Cloud Run</a>
           </h3>
-          <p class="card__meta">Tech stack · Year</p>
-          <p>One or two sentences describing what the project does and why it matters.</p>
+          <p class="card__meta">TensorFlow · Google Cloud Run · 2020</p>
+          <p>Food classifier app from the BigDataX workshop, deployed for cloud-based inference.</p>
           <ul class="tag-list tag-list--inline">
-            <li>React</li>
-            <li>API</li>
+            <li>TensorFlow</li>
+            <li>Cloud Run</li>
           </ul>
         </article>
         <article class="card project-card">
           <h3 class="card__title">
-            <a href="#" target="_blank" rel="noopener noreferrer">Another Project</a>
+            <a href="https://github.com/Reyno851/GioSenz_UI" target="_blank" rel="noopener noreferrer">GioSenz UI</a>
           </h3>
-          <p class="card__meta">Tech stack · Year</p>
-          <p>Placeholder description for a side project, open-source contribution, or portfolio piece.</p>
+          <p class="card__meta">Angular · Google Maps API · 2019</p>
+          <p>Mapping web application for geospatial optical imagery to support urban planning workflows.</p>
+          <ul class="tag-list tag-list--inline">
+            <li>Angular</li>
+            <li>Google Maps</li>
+          </ul>
+        </article>
+        <article class="card project-card">
+          <h3 class="card__title">
+            <a href="https://github.com/Reyno851/DS102_Python_AirBnB" target="_blank" rel="noopener noreferrer">Singapore AirBnB Analytics</a>
+          </h3>
+          <p class="card__meta">Python · Data analytics · 2019</p>
+          <p>Mined and analyzed AirBnB rental reviews in Singapore to produce descriptive insights.</p>
           <ul class="tag-list tag-list--inline">
             <li>Python</li>
-            <li>AWS</li>
+            <li>Analytics</li>
+          </ul>
+        </article>
+        <article class="card project-card">
+          <h3 class="card__title">
+            <a href="https://github.com/Reyno851/FullStackOpen2020" target="_blank" rel="noopener noreferrer">Full Stack Open 2020</a>
+          </h3>
+          <p class="card__meta">React · Node.js · JavaScript</p>
+          <p>Coursework and exercises from the University of Helsinki Full Stack Open programme.</p>
+          <ul class="tag-list tag-list--inline">
+            <li>React</li>
+            <li>Node.js</li>
           </ul>
         </article>
       </div>
@@ -157,16 +276,17 @@
 
     <section class="section section--contact" id="contact">
       <h2 class="section__title">Contact</h2>
-      <p>Open to opportunities. Reach out via email or LinkedIn.</p>
+      <p>Open to connecting about cloud engineering, platform work, and new opportunities.</p>
       <div class="hero__actions">
-        <a class="btn btn--primary" href="mailto:you@example.com">Email me</a>
-        <a class="btn btn--secondary" href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="btn btn--primary" href="mailto:reynoldchia@gmail.com">Email me</a>
+        <a class="btn btn--secondary" href="https://www.linkedin.com/in/reynold-chia-519356167/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="btn btn--secondary" href="https://github.com/Reyno851" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Your Name. Built with HTML, CSS, and JavaScript.</p>
+    <p>&copy; <span id="year"></span> Reynold Chia. Built with HTML, CSS, and JavaScript.</p>
   </footer>
 
   <script src="script.js"></script>
