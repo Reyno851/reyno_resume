@@ -73,16 +73,18 @@ a:hover {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  max-width: calc(var(--max-width) + 4rem);
+  gap: var(--space-md);
+  max-width: min(1100px, 100%);
   margin: 0 auto;
   padding: var(--space-sm) var(--space-md);
 }
 
 .nav__brand {
+  flex-shrink: 0;
   font-weight: 600;
   color: var(--color-text);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .nav__brand:hover {
@@ -92,20 +94,61 @@ a:hover {
 
 .nav__menu {
   display: flex;
-  gap: var(--space-md);
+  flex: 1;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: var(--space-sm) var(--space-md);
   list-style: none;
   margin: 0;
   padding: 0;
+  min-width: 0;
+}
+
+.nav__menu li {
+  flex-shrink: 0;
 }
 
 .nav__menu a {
   color: var(--color-muted);
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   text-decoration: none;
+  white-space: nowrap;
+}
+
+html[lang="ja"] .nav__menu a {
+  font-size: 0.8rem;
 }
 
 .nav__menu a:hover {
   color: var(--color-text);
+}
+
+.nav__controls {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: var(--space-sm);
+}
+
+.lang-toggle {
+  padding: 0.35rem 0.75rem;
+  min-width: 5.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: center;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  color: var(--color-text);
+  cursor: pointer;
+  font-family: inherit;
+  white-space: nowrap;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.lang-toggle:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 .nav__toggle {
@@ -462,8 +505,22 @@ main {
   margin: 0;
 }
 
-/* Mobile nav */
-@media (max-width: 640px) {
+/* Compact nav — horizontal links need more room than the content column */
+@media (max-width: 960px) {
+  .nav {
+    gap: var(--space-sm);
+  }
+
+  .nav__controls {
+    gap: var(--space-xs);
+  }
+
+  .lang-toggle {
+    padding: 0.3rem 0.55rem;
+    min-width: 5.25rem;
+    font-size: 0.8rem;
+  }
+
   .nav__toggle {
     display: flex;
   }
@@ -474,7 +531,9 @@ main {
     top: 100%;
     left: 0;
     right: 0;
+    flex: none;
     flex-direction: column;
+    flex-wrap: nowrap;
     gap: 0;
     background: var(--color-bg);
     border-bottom: 1px solid var(--color-border);

@@ -11,40 +11,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
   <header class="site-header">
-    <nav class="nav" aria-label="Primary">
+    <nav class="nav" data-i18n-aria="nav.label" aria-label="Primary">
       <a class="nav__brand" href="#">Reynold Chia</a>
-      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
-        <span class="nav__toggle-label">Menu</span>
-        <span class="nav__toggle-icon" aria-hidden="true"></span>
-      </button>
       <ul class="nav__menu" id="nav-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+        <li><a href="#education" data-i18n="nav.education">Education</a></li>
+        <li><a href="#certifications" data-i18n="nav.certifications">Certifications</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
+      <div class="nav__controls">
+        <button type="button" class="lang-toggle" id="lang-toggle" data-lang="en" data-i18n="lang.toggle" aria-label="Switch resume to Japanese">日本語</button>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav__toggle-label" data-i18n="nav.menu">Menu</span>
+          <span class="nav__toggle-icon" aria-hidden="true"></span>
+        </button>
+      </div>
     </nav>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
       <div class="hero__inner">
-        <!--
-          Photo: use at least 800×800 px for a sharp result on retina screens.
-          Optional: add assets/profile@2x.jpg (800×800+) — srcset will use it automatically.
-        -->
         <figure class="hero__photo">
           <img
             class="hero__photo-img"
             src="assets/profile.jpg"
             srcset="assets/profile.jpg 400w"
             sizes="(min-width: 640px) 200px, 168px"
+            data-i18n-alt="hero.alt"
             alt="Portrait of Reynold Chia"
             width="400"
             height="400"
@@ -53,30 +53,30 @@
           >
         </figure>
         <div class="hero__content">
-          <p class="hero__eyebrow">Senior Cloud Engineer</p>
+          <p class="hero__eyebrow" data-i18n="hero.eyebrow">Senior Cloud Engineer</p>
           <h1 class="hero__title">Reynold Chia</h1>
-          <p class="hero__summary">
+          <p class="hero__summary" data-i18n="hero.summary">
             Cloud engineer with 7+ years of experience building secure, scalable platforms on AWS.
             Passionate about automation, observability, and using emerging technologies to improve
             how teams ship and operate in the cloud.
           </p>
           <div class="hero__actions">
-            <a class="btn btn--primary" href="#contact">Get in touch</a>
-            <a class="btn btn--secondary" href="https://www.linkedin.com/in/reynold-chia-519356167/" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
+            <a class="btn btn--primary" href="#contact" data-i18n="hero.cta.contact">Get in touch</a>
+            <a class="btn btn--secondary" href="https://www.linkedin.com/in/reynold-chia-519356167/" target="_blank" rel="noopener noreferrer" data-i18n="hero.cta.linkedin">LinkedIn profile</a>
           </div>
           <ul class="hero__contact">
             <li><a href="mailto:reynoldchia@gmail.com">reynoldchia@gmail.com</a></li>
             <li><a href="https://github.com/Reyno851" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             <li><a href="https://www.linkedin.com/in/reynold-chia-519356167/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><span>Singapore</span></li>
+            <li><span data-i18n="hero.location">Singapore</span></li>
           </ul>
         </div>
       </div>
     </section>
 
     <section class="section" id="about">
-      <h2 class="section__title">About</h2>
-      <p>
+      <h2 class="section__title" data-i18n="about.title">About</h2>
+      <p data-i18n="about.body">
         I am passionate about automation and cloud technologies, with a strong focus on AWS
         solutions that improve availability, reliability, security, and performance. I have
         designed and implemented robust cloud architectures and stay current with industry trends
@@ -88,123 +88,116 @@
     </section>
 
     <section class="section" id="experience">
-      <h2 class="section__title">Experience</h2>
+      <h2 class="section__title" data-i18n="experience.title">Experience</h2>
       <ol class="timeline">
         <li class="timeline__item">
           <div class="timeline__header">
-            <h3 class="timeline__role">Senior Cloud Engineer</h3>
-            <span class="timeline__date">May 2025 — Present</span>
+            <h3 class="timeline__role" data-i18n="exp.ais.role">Senior Cloud Engineer</h3>
+            <span class="timeline__date" data-i18n="exp.ais.date">May 2025 — Present</span>
           </div>
-          <p class="timeline__org">Aioi Nissay Dowa Services Asia Pte. Ltd. · Singapore</p>
+          <p class="timeline__org" data-i18n="exp.ais.org">Aioi Nissay Dowa Services Asia Pte. Ltd. · Singapore</p>
           <ul>
-            <li>Led APAC-wide cloud projects across the Philippines, Indonesia, and India, collaborating with local teams and external vendors to optimize workflows and infrastructure.</li>
-            <li>Enabled GDCM and LDCM IMP device types with end-to-end infrastructure using AWS Lambda, S3, IAM roles, CloudFront, and a React UI; automated pipelines for model updates, driver lists, and scoring reports with Lambda, Step Functions, AWS Batch, Boto3, and CloudWatch.</li>
-            <li>Modernized IndoB2C and MDI codebases by moving logic out of RDS for GitLab version control, reviewing and refactoring vendor code, resolving caching and CSV upload issues, and migrating legacy systems from CodeCommit to GitLab while upgrading Python from 3.9 to 3.12.</li>
-            <li>Collaborated with Data Science and Business Development teams to optimize scoring logic, vehicle registration, and reporting pipelines, including automating tasks, querying RDS via SageMaker notebooks, ad-hoc data fixes, and robust logging and monitoring.</li>
-            <li>Provided operational support including EC2 debugging for clock resyncs, retriggering downloads, and optimizing legacy trip scoring code, significantly reducing RDS aborted clients and improving system stability.</li>
-            <li>Coordinated with internal and external stakeholders, including Japanese and Vietnamese vendors, for requirements gathering, code reviews, and project discussions; supported initiatives such as the GDCM rollout for IndoB2C and upcoming projects in Vietnam.</li>
+            <li data-i18n="exp.ais.b1">Led APAC-wide cloud projects across the Philippines, Indonesia, and India, collaborating with local teams and external vendors to optimize workflows and infrastructure.</li>
+            <li data-i18n="exp.ais.b2">Enabled GDCM and LDCM IMP device types with end-to-end infrastructure using AWS Lambda, S3, IAM roles, CloudFront, and a React UI; automated pipelines for model updates, driver lists, and scoring reports with Lambda, Step Functions, AWS Batch, Boto3, and CloudWatch.</li>
+            <li data-i18n="exp.ais.b3">Modernized IndoB2C and MDI codebases by moving logic out of RDS for GitLab version control, reviewing and refactoring vendor code, resolving caching and CSV upload issues, and migrating legacy systems from CodeCommit to GitLab while upgrading Python from 3.9 to 3.12.</li>
+            <li data-i18n="exp.ais.b4">Collaborated with Data Science and Business Development teams to optimize scoring logic, vehicle registration, and reporting pipelines, including automating tasks, querying RDS via SageMaker notebooks, ad-hoc data fixes, and robust logging and monitoring.</li>
+            <li data-i18n="exp.ais.b5">Provided operational support including EC2 debugging for clock resyncs, retriggering downloads, and optimizing legacy trip scoring code, significantly reducing RDS aborted clients and improving system stability.</li>
+            <li data-i18n="exp.ais.b6">Coordinated with internal and external stakeholders, including Japanese and Vietnamese vendors, for requirements gathering, code reviews, and project discussions; supported initiatives such as the GDCM rollout for IndoB2C and upcoming projects in Vietnam.</li>
           </ul>
         </li>
         <li class="timeline__item">
           <div class="timeline__header">
-            <h3 class="timeline__role">Cloud Engineer</h3>
-            <span class="timeline__date">Aug 2020 — May 2025</span>
+            <h3 class="timeline__role" data-i18n="exp.dbs.role">Cloud Engineer</h3>
+            <span class="timeline__date" data-i18n="exp.dbs.date">Aug 2020 — May 2025</span>
           </div>
-          <p class="timeline__org">DBS Bank · Singapore</p>
+          <p class="timeline__org" data-i18n="exp.dbs.org">DBS Bank · Singapore</p>
           <ul>
-            <li>Developed DBS Bank’s AWS public cloud platform-as-a-service, Evolve, including X-Ray tracing in Lambda and AMI encryption in EC2.</li>
-            <li>Automated AWS CloudFormation deployment testing via a Jenkins and Python pipeline built with a 3-person team.</li>
-            <li>Consolidated logs from AWS GuardDuty, IAM Access Analyzer, VPC Flow Logs, and Route 53 resolvers into a central S3 bucket for easier querying.</li>
-            <li>Built an AWS OpenSearch dashboard for S3 logs across 20+ accounts, improving visibility into non-compliant API calls.</li>
-            <li>Strengthened EKS security by enforcing latest TLS standards through Kubernetes OPA Gatekeeper.</li>
-            <li>Built a Java Spring Boot and Angular web portal used by 30+ application teams to manage cloud deployments.</li>
-            <li>Reduced Lambda invocation costs by 50% by fixing critical bugs in a compliance exemption approval workflow.</li>
-            <li>Connected AWS CloudWatch alerts to Microsoft Teams via SNS to improve observability and incident response.</li>
+            <li data-i18n="exp.dbs.b1">Developed DBS Bank’s AWS public cloud platform-as-a-service, Evolve, including X-Ray tracing in Lambda and AMI encryption in EC2.</li>
+            <li data-i18n="exp.dbs.b2">Automated AWS CloudFormation deployment testing via a Jenkins and Python pipeline built with a 3-person team.</li>
+            <li data-i18n="exp.dbs.b3">Consolidated logs from AWS GuardDuty, IAM Access Analyzer, VPC Flow Logs, and Route 53 resolvers into a central S3 bucket for easier querying.</li>
+            <li data-i18n="exp.dbs.b4">Built an AWS OpenSearch dashboard for S3 logs across 20+ accounts, improving visibility into non-compliant API calls.</li>
+            <li data-i18n="exp.dbs.b5">Strengthened EKS security by enforcing latest TLS standards through Kubernetes OPA Gatekeeper.</li>
+            <li data-i18n="exp.dbs.b6">Built a Java Spring Boot and Angular web portal used by 30+ application teams to manage cloud deployments.</li>
+            <li data-i18n="exp.dbs.b7">Reduced Lambda invocation costs by 50% by fixing critical bugs in a compliance exemption approval workflow.</li>
+            <li data-i18n="exp.dbs.b8">Connected AWS CloudWatch alerts to Microsoft Teams via SNS to improve observability and incident response.</li>
           </ul>
         </li>
         <li class="timeline__item">
           <div class="timeline__header">
-            <h3 class="timeline__role">Software Development Associate</h3>
-            <span class="timeline__date">Jan 2020 — Jul 2020</span>
+            <h3 class="timeline__role" data-i18n="exp.jtc.role">Software Development Associate</h3>
+            <span class="timeline__date" data-i18n="exp.jtc.date">Jan 2020 — Jul 2020</span>
           </div>
-          <p class="timeline__org">JTC Corporation · Singapore</p>
+          <p class="timeline__org" data-i18n="exp.jtc.org">JTC Corporation · Singapore</p>
           <ul>
-            <li>Led ReactJS development of JTC’s revamped geospatial web application for improved customisability and scalability.</li>
-            <li>Integrated ArcGIS Enterprise data with JavaScript, HTML, and CSS to deliver a user-friendly interface for industrial users.</li>
-            <li>Collaborated with a 4-person team using Microsoft Visual Studio TFS and Git to meet project deadlines.</li>
+            <li data-i18n="exp.jtc.b1">Led ReactJS development of JTC’s revamped geospatial web application for improved customisability and scalability.</li>
+            <li data-i18n="exp.jtc.b2">Integrated ArcGIS Enterprise data with JavaScript, HTML, and CSS to deliver a user-friendly interface for industrial users.</li>
+            <li data-i18n="exp.jtc.b3">Collaborated with a 4-person team using Microsoft Visual Studio TFS and Git to meet project deadlines.</li>
           </ul>
         </li>
         <li class="timeline__item">
           <div class="timeline__header">
-            <h3 class="timeline__role">Software Development (Freelance)</h3>
-            <span class="timeline__date">Aug 2019 — Dec 2019</span>
+            <h3 class="timeline__role" data-i18n="exp.gio.role">Software Development (Freelance)</h3>
+            <span class="timeline__date" data-i18n="exp.gio.date">Aug 2019 — Dec 2019</span>
           </div>
-          <p class="timeline__org">GioSenz · Singapore</p>
+          <p class="timeline__org" data-i18n="exp.gio.org">GioSenz · Singapore</p>
           <ul>
-            <li>Led front-end Angular CLI development of a UI for reading geospatial optical imagery via Google Maps API.</li>
-            <li>Styled the application with HTML5, CSS, and TypeScript to improve usability for urban-planning clients.</li>
+            <li data-i18n="exp.gio.b1">Led front-end Angular CLI development of a UI for reading geospatial optical imagery via Google Maps API.</li>
+            <li data-i18n="exp.gio.b2">Styled the application with HTML5, CSS, and TypeScript to improve usability for urban-planning clients.</li>
           </ul>
         </li>
         <li class="timeline__item">
           <div class="timeline__header">
-            <h3 class="timeline__role">Student Consultant</h3>
-            <span class="timeline__date">Sep 2019</span>
+            <h3 class="timeline__role" data-i18n="exp.aws.role">Student Consultant</h3>
+            <span class="timeline__date" data-i18n="exp.aws.date">Sep 2019</span>
           </div>
-          <p class="timeline__org">Amazon Web Services (AWS) · Singapore</p>
+          <p class="timeline__org" data-i18n="exp.aws.org">Amazon Web Services (AWS) · Singapore</p>
           <ul>
-            <li>NTU PEAK programme: Best Ideation Award, 1st runner-up — designed a university graduate hiring programme for AWS.</li>
-            <li>Pitched solutions to C-suite leaders from AWS, Rolls-Royce, EY, Lendlease, and SSMC.</li>
+            <li data-i18n="exp.aws.b1">NTU PEAK programme: Best Ideation Award, 1st runner-up — designed a university graduate hiring programme for AWS.</li>
+            <li data-i18n="exp.aws.b2">Pitched solutions to C-suite leaders from AWS, Rolls-Royce, EY, Lendlease, and SSMC.</li>
           </ul>
         </li>
       </ol>
     </section>
 
     <section class="section" id="education">
-      <h2 class="section__title">Education</h2>
+      <h2 class="section__title" data-i18n="education.title">Education</h2>
       <article class="card">
-        <h3 class="card__title">Bachelor of Science, Environmental Earth Systems Science</h3>
-        <p class="card__meta">Nanyang Technological University · 2016 — 2020 · Singapore</p>
-        <p>NTU College Scholarship recipient. Selected activities: NTU PEAK Best Ideation Award (1st runner-up), Microsoft AI Gaming Challenge (3rd place), HackNTU CTF participant.</p>
+        <h3 class="card__title" data-i18n="edu.ntu.title">Bachelor of Science, Environmental Earth Systems Science</h3>
+        <p class="card__meta" data-i18n="edu.ntu.meta">Nanyang Technological University · 2016 — 2020 · Singapore</p>
+        <p data-i18n="edu.ntu.body">NTU College Scholarship recipient. Selected activities: NTU PEAK Best Ideation Award (1st runner-up), Microsoft AI Gaming Challenge (3rd place), HackNTU CTF participant.</p>
       </article>
       <article class="card">
-        <h3 class="card__title">Global Education and Mobility (GEM) Explorer</h3>
-        <p class="card__meta">University of Leeds · 2018 · United Kingdom</p>
+        <h3 class="card__title" data-i18n="edu.leeds.title">Global Education and Mobility (GEM) Explorer</h3>
+        <p class="card__meta" data-i18n="edu.leeds.meta">University of Leeds · 2018 · United Kingdom</p>
       </article>
     </section>
 
-    <!--
-      CERTIFICATIONS — edit the block below (id="certifications"):
-      For each <li>, set:
-        1. href="..."  → your Credly badge URL (e.g. https://www.credly.com/badges/xxxx)
-        2. Link text   → exact certification name
-      Duplicate or remove <li> rows as needed. Add more AWS certs; keep or remove Google.
-    -->
     <section class="section" id="certifications">
-      <h2 class="section__title">Certifications</h2>
+      <h2 class="section__title" data-i18n="cert.title">Certifications</h2>
       <ul class="cert-list">
         <li>
-          <a href="https://www.credly.com/badges/4c6f8997-3ab0-4518-a84a-bd393e1d8946/linked_in_profile" target="_blank" rel="noopener noreferrer">AWS Certified CloudOps Engineer – Associate</a>
+          <a href="https://www.credly.com/badges/4c6f8997-3ab0-4518-a84a-bd393e1d8946/linked_in_profile" target="_blank" rel="noopener noreferrer" data-i18n="cert.aws.cloudops">AWS Certified CloudOps Engineer – Associate</a>
         </li>
         <li>
-          <a href="https://www.credly.com/badges/1293daa4-abc8-45e8-a0e5-1114f447858e/linked_in_profile" target="_blank" rel="noopener noreferrer">AWS Certified Solutions Architect – Professional</a>
+          <a href="https://www.credly.com/badges/1293daa4-abc8-45e8-a0e5-1114f447858e/linked_in_profile" target="_blank" rel="noopener noreferrer" data-i18n="cert.aws.sa">AWS Certified Solutions Architect – Professional</a>
         </li>
         <li>
-          <a href="https://www.credly.com/badges/ff4b17d3-96b8-445c-961a-b11e5aa78632/linked_in_profile" target="_blank" rel="noopener noreferrer">Google Cloud Certified — Associate Cloud Engineer</a>
+          <a href="https://www.credly.com/badges/ff4b17d3-96b8-445c-961a-b11e5aa78632/linked_in_profile" target="_blank" rel="noopener noreferrer" data-i18n="cert.gcp">Google Cloud Certified — Associate Cloud Engineer</a>
         </li>
         <li>
-          <a href="https://www.credly.com/badges/1fc775e4-09bb-42ff-8618-016609509e21/linked_in_profile" target="_blank" rel="noopener noreferrer">CKA: Certified Kubernetes Administrator</a>
+          <a href="https://www.credly.com/badges/1fc775e4-09bb-42ff-8618-016609509e21/linked_in_profile" target="_blank" rel="noopener noreferrer" data-i18n="cert.cka">CKA: Certified Kubernetes Administrator</a>
         </li>
         <li>
-          <a href="https://rey-s3.s3.amazonaws.com/jlpt_n3_cert.pdf" target="_blank" rel="noopener noreferrer">JLPT N3</a>
+          <a href="https://rey-s3.s3.amazonaws.com/jlpt_n3_cert.pdf" target="_blank" rel="noopener noreferrer" data-i18n="cert.jlpt">JLPT N3</a>
         </li>
       </ul>
     </section>
 
     <section class="section" id="skills">
-      <h2 class="section__title">Skills</h2>
+      <h2 class="section__title" data-i18n="skills.title">Skills</h2>
       <div class="skills">
         <div class="skills__group">
-          <h3>Cloud &amp; DevOps</h3>
+          <h3 data-i18n="skills.cloud">Cloud &amp; DevOps</h3>
           <ul class="tag-list">
             <li>AWS</li>
             <li>CloudFormation</li>
@@ -219,7 +212,7 @@
           </ul>
         </div>
         <div class="skills__group">
-          <h3>Languages &amp; Frameworks</h3>
+          <h3 data-i18n="skills.lang">Languages &amp; Frameworks</h3>
           <ul class="tag-list">
             <li>Python</li>
             <li>Java</li>
@@ -232,28 +225,28 @@
           </ul>
         </div>
         <div class="skills__group">
-          <h3>Tools &amp; Other</h3>
+          <h3 data-i18n="skills.tools">Tools &amp; Other</h3>
           <ul class="tag-list">
             <li>Git</li>
             <li>Tableau</li>
             <li>ArcGIS</li>
             <li>Microsoft Teams</li>
-            <li>Automation</li>
-            <li>Observability</li>
+            <li data-i18n="skills.automation">Automation</li>
+            <li data-i18n="skills.observability">Observability</li>
           </ul>
         </div>
       </div>
     </section>
 
     <section class="section" id="projects">
-      <h2 class="section__title">Projects</h2>
+      <h2 class="section__title" data-i18n="projects.title">Projects</h2>
       <div class="projects">
         <article class="card project-card">
           <h3 class="card__title">
-            <a href="https://github.com/Reyno851/food_classifier_tf2_cloud_run" target="_blank" rel="noopener noreferrer">Food Classifier on Cloud Run</a>
+            <a href="https://github.com/Reyno851/food_classifier_tf2_cloud_run" target="_blank" rel="noopener noreferrer" data-i18n="proj.food.title">Food Classifier on Cloud Run</a>
           </h3>
-          <p class="card__meta">TensorFlow · Google Cloud Run · 2020</p>
-          <p>Food classifier app from the BigDataX workshop, deployed for cloud-based inference.</p>
+          <p class="card__meta" data-i18n="proj.food.meta">TensorFlow · Google Cloud Run · 2020</p>
+          <p data-i18n="proj.food.body">Food classifier app from the BigDataX workshop, deployed for cloud-based inference.</p>
           <ul class="tag-list tag-list--inline">
             <li>TensorFlow</li>
             <li>Cloud Run</li>
@@ -261,10 +254,10 @@
         </article>
         <article class="card project-card">
           <h3 class="card__title">
-            <a href="https://github.com/Reyno851/GioSenz_UI" target="_blank" rel="noopener noreferrer">GioSenz UI</a>
+            <a href="https://github.com/Reyno851/GioSenz_UI" target="_blank" rel="noopener noreferrer" data-i18n="proj.gio.title">GioSenz UI</a>
           </h3>
-          <p class="card__meta">Angular · Google Maps API · 2019</p>
-          <p>Mapping web application for geospatial optical imagery to support urban planning workflows.</p>
+          <p class="card__meta" data-i18n="proj.gio.meta">Angular · Google Maps API · 2019</p>
+          <p data-i18n="proj.gio.body">Mapping web application for geospatial optical imagery to support urban planning workflows.</p>
           <ul class="tag-list tag-list--inline">
             <li>Angular</li>
             <li>Google Maps</li>
@@ -272,21 +265,21 @@
         </article>
         <article class="card project-card">
           <h3 class="card__title">
-            <a href="https://github.com/Reyno851/DS102_Python_AirBnB" target="_blank" rel="noopener noreferrer">Singapore AirBnB Analytics</a>
+            <a href="https://github.com/Reyno851/DS102_Python_AirBnB" target="_blank" rel="noopener noreferrer" data-i18n="proj.airbnb.title">Singapore AirBnB Analytics</a>
           </h3>
-          <p class="card__meta">Python · Data analytics · 2019</p>
-          <p>Mined and analyzed AirBnB rental reviews in Singapore to produce descriptive insights.</p>
+          <p class="card__meta" data-i18n="proj.airbnb.meta">Python · Data analytics · 2019</p>
+          <p data-i18n="proj.airbnb.body">Mined and analyzed AirBnB rental reviews in Singapore to produce descriptive insights.</p>
           <ul class="tag-list tag-list--inline">
             <li>Python</li>
-            <li>Analytics</li>
+            <li data-i18n="proj.analytics">Analytics</li>
           </ul>
         </article>
         <article class="card project-card">
           <h3 class="card__title">
-            <a href="https://github.com/Reyno851/FullStackOpen2020" target="_blank" rel="noopener noreferrer">Full Stack Open 2020</a>
+            <a href="https://github.com/Reyno851/FullStackOpen2020" target="_blank" rel="noopener noreferrer" data-i18n="proj.fso.title">Full Stack Open 2020</a>
           </h3>
-          <p class="card__meta">React · Node.js · JavaScript</p>
-          <p>Coursework and exercises from the University of Helsinki Full Stack Open programme.</p>
+          <p class="card__meta" data-i18n="proj.fso.meta">React · Node.js · JavaScript</p>
+          <p data-i18n="proj.fso.body">Coursework and exercises from the University of Helsinki Full Stack Open programme.</p>
           <ul class="tag-list tag-list--inline">
             <li>React</li>
             <li>Node.js</li>
@@ -296,10 +289,10 @@
     </section>
 
     <section class="section section--contact" id="contact">
-      <h2 class="section__title">Contact</h2>
-      <p>Open to connecting about cloud engineering, platform work, and new opportunities.</p>
+      <h2 class="section__title" data-i18n="contact.title">Contact</h2>
+      <p data-i18n="contact.body">Open to connecting about cloud engineering, platform work, and new opportunities.</p>
       <div class="hero__actions">
-        <a class="btn btn--primary" href="mailto:reynoldchia@gmail.com">Email me</a>
+        <a class="btn btn--primary" href="mailto:reynoldchia@gmail.com" data-i18n="contact.email">Email me</a>
         <a class="btn btn--secondary" href="https://www.linkedin.com/in/reynold-chia-519356167/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a class="btn btn--secondary" href="https://github.com/Reyno851" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
@@ -307,9 +300,10 @@
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Reynold Chia. Built with HTML, CSS, and JavaScript.</p>
+    <p>&copy; <span id="year"></span> Reynold Chia. <span data-i18n="footer">Built with HTML, CSS, and JavaScript.</span></p>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
