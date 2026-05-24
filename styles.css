@@ -153,6 +153,61 @@ main {
   padding-top: var(--space-xl);
 }
 
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+  text-align: center;
+}
+
+.hero__photo {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 3px;
+  width: 174px;
+  border-radius: calc(var(--radius) + 4px);
+  background: linear-gradient(135deg, var(--color-accent), #6366f1 50%, var(--color-border));
+  box-shadow: 0 12px 40px rgba(59, 130, 246, 0.15);
+  /* Keeps the image on its own layer — avoids soft scaling in some browsers */
+  isolation: isolate;
+}
+
+.hero__photo-img {
+  display: block;
+  width: 168px;
+  height: 168px;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  border-radius: var(--radius);
+  border: 3px solid var(--color-bg);
+  /* Downscale only (never upscale past intrinsic size) */
+  image-rendering: auto;
+}
+
+.hero__content {
+  min-width: 0;
+}
+
+@media (min-width: 640px) {
+  .hero__inner {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: var(--space-xl);
+  }
+
+  .hero__photo {
+    width: 206px;
+  }
+
+  .hero__photo-img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
 .hero__eyebrow {
   margin: 0 0 var(--space-xs);
   font-size: 0.95rem;
@@ -171,7 +226,13 @@ main {
   margin: 0 0 var(--space-md);
   font-size: 1.1rem;
   color: var(--color-muted);
-  max-width: 38ch;
+  max-width: 42ch;
+}
+
+@media (min-width: 640px) {
+  .hero__summary {
+    max-width: none;
+  }
 }
 
 .hero__actions {

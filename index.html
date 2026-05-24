@@ -34,23 +34,44 @@
 
   <main id="main">
     <section class="hero" id="top">
-      <p class="hero__eyebrow">Senior Cloud Engineer</p>
-      <h1 class="hero__title">Reynold Chia</h1>
-      <p class="hero__summary">
-        Cloud engineer with 7+ years of experience building secure, scalable platforms on AWS.
-        Passionate about automation, observability, and using emerging technologies to improve
-        how teams ship and operate in the cloud.
-      </p>
-      <div class="hero__actions">
-        <a class="btn btn--primary" href="#contact">Get in touch</a>
-        <a class="btn btn--secondary" href="https://www.linkedin.com/in/reynold-chia-519356167/" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
+      <div class="hero__inner">
+        <!--
+          Photo: use at least 800×800 px for a sharp result on retina screens.
+          Optional: add assets/profile@2x.jpg (800×800+) — srcset will use it automatically.
+        -->
+        <figure class="hero__photo">
+          <img
+            class="hero__photo-img"
+            src="assets/profile.jpg"
+            srcset="assets/profile.jpg 400w"
+            sizes="(min-width: 640px) 200px, 168px"
+            alt="Portrait of Reynold Chia"
+            width="400"
+            height="400"
+            decoding="sync"
+            fetchpriority="high"
+          >
+        </figure>
+        <div class="hero__content">
+          <p class="hero__eyebrow">Senior Cloud Engineer</p>
+          <h1 class="hero__title">Reynold Chia</h1>
+          <p class="hero__summary">
+            Cloud engineer with 7+ years of experience building secure, scalable platforms on AWS.
+            Passionate about automation, observability, and using emerging technologies to improve
+            how teams ship and operate in the cloud.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contact">Get in touch</a>
+            <a class="btn btn--secondary" href="https://www.linkedin.com/in/reynold-chia-519356167/" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
+          </div>
+          <ul class="hero__contact">
+            <li><a href="mailto:reynoldchia@gmail.com">reynoldchia@gmail.com</a></li>
+            <li><a href="https://github.com/Reyno851" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/reynold-chia-519356167/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><span>Singapore</span></li>
+          </ul>
+        </div>
       </div>
-      <ul class="hero__contact">
-        <li><a href="mailto:reynoldchia@gmail.com">reynoldchia@gmail.com</a></li>
-        <li><a href="https://github.com/Reyno851" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/reynold-chia-519356167/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-        <li><span>Singapore</span></li>
-      </ul>
     </section>
 
     <section class="section" id="about">
